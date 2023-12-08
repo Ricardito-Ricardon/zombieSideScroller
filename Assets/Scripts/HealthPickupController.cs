@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthPickupController : MonoBehaviour
 {
     public float healthAmount;
+    public AudioClip healthPickupSound;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class HealthPickupController : MonoBehaviour
         {
             other.GetComponent<PlayerHealth>().addHealth(healthAmount);
             Destroy(transform.root.gameObject);
+            AudioSource.PlayClipAtPoint(healthPickupSound,transform.position,1f);
         }
     }
 }

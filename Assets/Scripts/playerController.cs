@@ -45,6 +45,7 @@ public class playerController : MonoBehaviour
         {
             grounded = false;
             myAnim.SetBool("grounded", grounded);
+            myRB.velocity = new Vector3(myRB.velocity.x, 0, 0);
             myRB.AddForce(new Vector3(0, jumpHeight, 0));
         }
 
@@ -53,6 +54,9 @@ public class playerController : MonoBehaviour
         else grounded = false;
 
         myAnim.SetBool("grounded", grounded);
+
+        //jumping
+        myAnim.SetFloat("verticalSpeed", myRB.velocity.y);
 
         float move = Input.GetAxis("Horizontal");
         myAnim.SetFloat("speed",Mathf.Abs(move));
