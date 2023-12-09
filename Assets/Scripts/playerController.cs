@@ -6,8 +6,8 @@ using UnityEngine;
 public class playerController : MonoBehaviour
 {
     //movement variables
-    public float runSpeed;
-    public float walkSpeed;
+    [SerializeField] float runSpeed;
+    [SerializeField] float walkSpeed;
     bool running;
 
     Rigidbody myRB;
@@ -19,9 +19,9 @@ public class playerController : MonoBehaviour
     bool grounded = false;
     Collider[] groundCollisions;
     float groundCheckRadius = 0.2f;
-    public LayerMask groundLayer;
-    public Transform groundCheck;
-    public float jumpHeight;
+    [SerializeField] LayerMask groundLayer;
+    [SerializeField] Transform groundCheck;
+    [SerializeField] float jumpHeight;
 
     // Start is called before the first frame update
     void Start()

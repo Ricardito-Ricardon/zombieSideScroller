@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class ZombieController : MonoBehaviour
 {
-    public GameObject flipModel;
-    public GameObject ragdollDead;
+    [SerializeField] GameObject flipModel;
+    [SerializeField] GameObject ragdollDead;
 
     //audio options
-    public AudioClip[] idleSounds;
-    public float idleSoundTime;
+    [SerializeField] AudioClip[] idleSounds;
+    [SerializeField] float idleSoundTime;
     AudioSource enemyMovementAS;
     float nextIdleSound = 0f;
 
-    public float detectionTime;
+    [SerializeField] float detectionTime;
     float startRun;
     bool firstDetection;
 
     //movement option
-    public float runSpeed;
-    public float walkSpeed;
-    public bool facingRight = true;
+    [SerializeField] float runSpeed;
+    [SerializeField] float walkSpeed;
+    [SerializeField] bool facingRight = true;
 
     float moveSpeed;
     bool running;

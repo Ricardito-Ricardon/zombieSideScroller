@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class WeaponPickupController : MonoBehaviour
 {
-    public int whichWeapon;
-    public AudioClip pickupClip;
+    [SerializeField] int whichWeapon;
+    [SerializeField] AudioClip pickupClip;
 
     // Start is called before the first frame update
     void Start()

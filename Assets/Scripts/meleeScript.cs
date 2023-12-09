@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class meleeScript : MonoBehaviour
 {
-    public float damage;
-    public float knockBack;
-    public float knockBackRadius;
-    public float meleeRate;
+    [SerializeField] float damage;
+    [SerializeField] float knockBack;
+    [SerializeField] float knockBackRadius;
+    [SerializeField] float meleeRate;
 
     float nextMelee;
 

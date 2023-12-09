@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    public GameObject[] weapons;
+    [SerializeField] GameObject[] weapons;
     bool[] weaponAvailable;
-    public Image weaponImage;
+    [SerializeField] Image weaponImage;
 
     int currentWeapon;
 

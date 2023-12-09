@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RandomizedZombieAppearance : MonoBehaviour
 {
-    public Material[] zombieMaterials;
+    [SerializeField] Material[] zombieMaterials;
 
     // Start is called before the first frame update
     void Start()

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class shootBullet : MonoBehaviour
 {
-    public float range = 10f;
-    public float damage = 5f;
+    [SerializeField] float range = 10f;
+    [SerializeField] float damage = 5f;
 
     Ray shootRay;
     RaycastHit shootHit;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ElevatorController : MonoBehaviour
 {
-    public float resetTime;
+    [SerializeField] float resetTime;
 
     Animator elevAnim;
     AudioSource elevAS;

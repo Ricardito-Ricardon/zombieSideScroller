@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public float enemyMaxHealth;
-    public float damageModifier;
-    public GameObject damageParticles;
-    public bool drops;
-    public GameObject drop;
-    public AudioClip deathSound;
-    public bool canBurn;
-    public float burnDamage;
-    public float burnTime;
-    public GameObject burnEffects;
+    [SerializeField] float enemyMaxHealth;
+    [SerializeField] float damageModifier;
+    [SerializeField] GameObject damageParticles;
+    [SerializeField] bool drops;
+    [SerializeField] GameObject drop;
+    [SerializeField] AudioClip deathSound;
+    [SerializeField] bool canBurn;
+    [SerializeField] float burnDamage;
+    [SerializeField] float burnTime;
+    [SerializeField] GameObject burnEffects;
 
     bool onFire;
     float nextBurn;
@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour
 
     float currentHealth;
 
-    public Slider enemyHealthIndicator;
+    [SerializeField] Slider enemyHealthIndicator;
 
     AudioSource enemyAS;
 

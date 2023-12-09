@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SoundRandomizer : MonoBehaviour
 {
-    public AudioClip[] sounds;
-    public AudioSource source;
+    [SerializeField] AudioClip[] sounds;
+    [SerializeField] AudioSource source;
 
     // Start is called before the first frame update
     void Start()

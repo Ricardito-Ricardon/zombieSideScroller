@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float fullHealth;
+    [SerializeField] float fullHealth;
     float currentHealth;
 
-    public GameObject playerDeathFX;
+    [SerializeField] GameObject playerDeathFX;
 
     //HUD
-    public Slider playerHealthSlider;
+    [SerializeField] Slider playerHealthSlider;
     public Image damagedScreen;
     Color flashColor = new Color(255f, 255f, 255f, 1f);
     float flashSpeed = 5f;

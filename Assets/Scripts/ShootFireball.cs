@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ShootFireball : MonoBehaviour
 {
-    public float damage;
-    public float speed;
+    [SerializeField] float damage;
+    [SerializeField] float speed;
 
     Rigidbody myRB;
 

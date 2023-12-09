@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ExplosionController : MonoBehaviour
 {
-    public Light explosionLight;
-    public float power;
-    public float radius;
-    public float damage;
+    [SerializeField] Light explosionLight;
+    [SerializeField] float power;
+    [SerializeField] float radius;
+    [SerializeField] float damage;
 
     // Start is called before the first frame update
     void Start()

@@ -5,10 +5,10 @@ using UnityEngine;
 public class GarageDoorController : MonoBehaviour
 {
 
-    public bool resetable;
-    public GameObject door;
-    public GameObject gear;
-    public bool startOpen;
+    [SerializeField] bool resetable;
+    [SerializeField] GameObject door;
+    [SerializeField] GameObject gear;
+    [SerializeField] bool startOpen;
 
     bool firstTrigger = false;
     bool open = true;

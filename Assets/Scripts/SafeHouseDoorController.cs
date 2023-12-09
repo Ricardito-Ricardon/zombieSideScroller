@@ -11,8 +11,8 @@ public class SafeHouseDoorController : MonoBehaviour
     bool inSafe = false;
 
     //HUD
-    public TextMeshProUGUI endGameText;
-    public RestartGame theGameController;
+    [SerializeField] TextMeshProUGUI endGameText;
+    [SerializeField] RestartGame theGameController;
 
     // Start is called before the first frame update
     void Start()

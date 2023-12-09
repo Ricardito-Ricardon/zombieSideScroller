@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class HealthPickupController : MonoBehaviour
 {
-    public float healthAmount;
-    public AudioClip healthPickupSound;
+    [SerializeField] float healthAmount;
+    [SerializeField] AudioClip healthPickupSound;
 
     // Start is called before the first frame update
     void Start()

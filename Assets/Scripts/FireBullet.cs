@@ -5,25 +5,25 @@ using UnityEngine.UI;
 
 public class FireBullet : MonoBehaviour
 {
-    public float timeBetweenBullets = 0.15f;
-    public GameObject projectile;
+    [SerializeField] float timeBetweenBullets = 0.15f;
+    [SerializeField] GameObject projectile;
 
     //Bullet info
-    public Slider playerAmmoSlider;
-    public int maxRounds;
-    public int startingRounds;
+    [SerializeField] Slider playerAmmoSlider;
+    [SerializeField] int maxRounds;
+    [SerializeField] int startingRounds;
     int remainingRounds;
 
     float nextBullet;
 
     //audio info
     AudioSource gunMuzzleAS;
-    public AudioClip shootSound;
-    public AudioClip reloadSound;
+    [SerializeField] AudioClip shootSound;
+    [SerializeField] AudioClip reloadSound;
 
     //graphic info
-    public Sprite weaponSprite;
-    public Image weaponImage;
+    [SerializeField] Sprite weaponSprite;
+    [SerializeField] Image weaponImage;
 
     // Start is called before the first frame update
     void Awake()

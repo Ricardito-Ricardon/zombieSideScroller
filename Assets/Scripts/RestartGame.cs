@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RestartGame : MonoBehaviour
 {
-    public float restartTime;
+    [SerializeField] float restartTime;
     bool resetNow = false;
     float resetTime;
 
